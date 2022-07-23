@@ -1,41 +1,45 @@
 -- :h or :help <option>
---vim.opt.termguicolors = true
-vim.opt.backup = false
-vim.opt.clipboard = "unnamedplus"
-vim.opt.cmdheight = 2
-vim.opt.completeopt = { "menuone", "noselect" }
-vim.opt.conceallevel = 0
-vim.opt.fileencoding = "utf-8"
-vim.opt.hlsearch = true
-vim.opt.ignorecase = true
-vim.opt.mouse = "a"
-vim.opt.showmode = true
-vim.opt.showtabline = 2
-vim.opt.smartcase = false
-vim.opt.smartindent = true
-vim.opt.splitbelow = true
-vim.opt.splitright = true
-vim.opt.swapfile = false
-vim.opt.timeoutlen = 1000
-vim.opt.undofile = true
-vim.opt.updatetime = 300
-vim.opt.writebackup = false
-vim.opt.expandtab = true
-vim.opt.shiftwidth = 4
-vim.opt.tabstop = 4
-vim.opt.cursorline = true
-vim.opt.number = true
-vim.opt.relativenumber = false
-vim.opt.numberwidth = 4
-vim.opt.signcolumn = "yes"
-vim.opt.wrap = false
-vim.opt.scrolloff = 8
-vim.opt.sidescrolloff = 8
-vim.opt.guifont = "monospace:h17"
+local o = vim.opt
+o.termguicolors = true
+o.backup = false
+o.clipboard = "unnamedplus"
+o.cmdheight = 2
+o.completeopt = { "menuone", "noselect" }
+o.conceallevel = 0
+o.fileencoding = "utf-8"
+o.hlsearch = true
+o.ignorecase = true
+o.mouse = "a"
+o.showmode = true
+o.showtabline = 2
+o.smartcase = false
+o.smartindent = true
+o.splitbelow = true
+o.splitright = true
+o.swapfile = false
+o.timeoutlen = 1000
+o.undofile = true
+o.updatetime = 300
+o.writebackup = false
+o.expandtab = true
+o.shiftwidth = 4
+o.tabstop = 4
+o.cursorline = true
+o.number = true
+o.relativenumber = false
+o.numberwidth = 4
+o.signcolumn = "yes"
+o.wrap = false
+o.scrolloff = 8
+o.sidescrolloff = 8
+o.guifont = "monospace:h17"
+o.shortmess:append "c"
 
-vim.opt.shortmess:append "c"
+-- Spellcheck option
+o.spelllang= { "en", "cjk" }
+o.spellsuggest= { "best", 9 }
+o.spell = true
 
 -- Vim script options
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
-
