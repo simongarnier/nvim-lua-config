@@ -37,6 +37,13 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
+-- Toggling spell check
+keymap("n", "<C-F11>", ":set spell!<cr>", opts)
+
+-- Cancelling search highlight
+keymap("n", "<CR>", ":noh<CR><CR>", opts)
+
+
 -- Insert --
 -- Press jk fast to enter
 -- keymap("i", "jk", "<ESC>", opts)

@@ -1,6 +1,6 @@
 -- :h or :help <option>
 local o = vim.opt
-o.termguicolors = true
+-- o.termguicolors = true
 o.backup = false
 o.clipboard = "unnamedplus"
 o.cmdheight = 2
