@@ -65,9 +65,14 @@ return packer.startup(function(use)
     use "L3MON4D3/LuaSnip" --snippet engine
     use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
+    -- Closing brace and quotes automatically
+    use "rstacruz/vim-closer"
+    use "jiangmiao/auto-pairs"
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then
         require("packer").sync()
     end
 end)
+
