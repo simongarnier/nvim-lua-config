@@ -38,7 +38,7 @@ keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Toggling spell check
-keymap("n", "<C-F11>", ":set spell!<cr>", opts)
+keymap("n", "<F11>", ":set spell!<cr>", opts)
 
 -- Cancelling search highlight
 keymap("n", "<CR>", ":noh<CR><CR>", opts)
@@ -60,3 +60,6 @@ keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 
 -- Don't write over when yanking/pasting
 keymap("v", "p", '"_dP', opts)
+
+-- Reindent whole file
+keymap("n", "<F7>", "gg=G''", opts)

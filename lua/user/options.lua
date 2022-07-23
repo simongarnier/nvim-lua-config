@@ -1,6 +1,6 @@
 -- :h or :help <option>
 local o = vim.opt
--- o.termguicolors = true
+o.termguicolors = true
 o.backup = false
 o.clipboard = "unnamedplus"
 o.cmdheight = 2
@@ -38,7 +38,7 @@ o.shortmess:append "c"
 -- Spellcheck option
 o.spelllang= { "en", "cjk" }
 o.spellsuggest= { "best", 9 }
-o.spell = true
+-- o.spell = true
 
 -- Vim script options
 vim.cmd "set whichwrap+=<,>,[,],h,l"
