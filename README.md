@@ -4,12 +4,12 @@
 - [ ] Insert EOF line on save
 - [ ] syntax highlighting
 - [ ] CTRL-/ to comment lines
-- [ ] toggling spell check
+- [x] toggling spell check
 
 ## Plugin
-- [ ] Markdown preview
-- [ ] Theming
+- [x] Markdown preview
+- [x] Theming
 - [ ] surround (if needed)
 
 ## Things to fix
-- [ ] termguicolor breaking all the colors when turned on
+- [x] termguicolor breaking all the colors when turned on
