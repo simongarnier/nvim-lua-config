@@ -59,7 +59,9 @@ return packer.startup(function(use)
     use "hrsh7th/cmp-path" -- path completions
     use "hrsh7th/cmp-cmdline" -- cmdline completions
     use "saadparwaiz1/cmp_luasnip" -- snippet completions
-    use { "David-Kunz/cmp-npm", requires = { "nvim-lua/plenary.nvim" }}
+    use "David-Kunz/cmp-npm" -- npm completion
+    use "hrsh7th/cmp-nvim-lsp" -- hook into lsp to show those completion
+    use "hrsh7th/cmp-nvim-lua" -- have completion for lua config
 
     -- snippets
     use "L3MON4D3/LuaSnip" --snippet engine
@@ -68,6 +70,10 @@ return packer.startup(function(use)
     -- Closing brace and quotes automatically
     use "rstacruz/vim-closer"
     use "jiangmiao/auto-pairs"
+    
+    -- LSP
+    use "neovim/nvim-lspconfig"
+    use "williamboman/nvim-lsp-installer"
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
