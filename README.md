@@ -7,6 +7,8 @@ Based on https://github.com/LunarVim/Neovim-from-scratch
 - [ ] syntax highlighting
 - [ ] CTRL-/ to comment lines
 - [x] toggling spell check
+- [ ] create a snippet for pcall with error message
+- [ ] setup auto pairs correctly
 
 ## Plugin
 - [x] Markdown preview
