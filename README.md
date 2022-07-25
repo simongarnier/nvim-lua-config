@@ -1,5 +1,7 @@
 # NeoVim Lua Config
 
+Based on https://github.com/LunarVim/Neovim-from-scratch
+
 ## Things to setup
 - [ ] Insert EOF line on save
 - [ ] syntax highlighting
