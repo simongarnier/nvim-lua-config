@@ -1,12 +1,6 @@
-local cmp_status_ok, cmp = pcall(require, "cmp")
-if not cmp_status_ok then
-    return
-end
-
-local snip_status_ok, luasnip = pcall(require, "luasnip")
-if not snip_status_ok then
-    return
-end
+local util = require("user.util")
+local cmp = util.safe_require("cmp")
+local luasnip = util.safe_require("luasnip")
 
 require("luasnip/loaders/from_vscode").lazy_load()
 

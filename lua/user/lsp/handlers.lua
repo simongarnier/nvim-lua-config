@@ -1,4 +1,5 @@
 local M = {}
+local util = require("user.util")
 
 M.setup = function()
     local signs = {
@@ -93,11 +94,7 @@ M.on_attach = function(client, bufnr)
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-
-local status_ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
-if not status_ok then
-    return
-end
+cmp_nvim_lsp = util.safe_require("cmp_nvim_lsp")
 
 M.capabilities = cmp_nvim_lsp.update_capabilities(capabilities)
 

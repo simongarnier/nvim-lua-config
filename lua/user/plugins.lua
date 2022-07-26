@@ -1,4 +1,5 @@
 local fn = vim.fn
+local util = require("user.util")
 
 -- Automatically install packer
 local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
@@ -24,10 +25,7 @@ augroup end
 ]]
 
 -- Use a protected call so we don't error out on first use
-local status_ok, packer = pcall(require, "packer")
-if not status_ok then
-    return
-end
+local packer = util.safe_require("packer")
 
 -- Have packer use a popup window
 packer.init {
@@ -45,7 +43,8 @@ return packer.startup(function(use)
     use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
     use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
-    -- My plugins
+    -- My plugins --
+    -- Markdown Preview
     use { "iamcco/markdown-preview.nvim", run = 'cd app && yarn install' }
 
     -- Color scheme

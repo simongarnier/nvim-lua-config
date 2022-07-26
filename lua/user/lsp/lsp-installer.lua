@@ -1,8 +1,5 @@
-local status_ok, lsp_installer = pcall(require, "nvim-lsp-installer")
-if not status_ok then
-    print("nvim-lsp-installer not install, please add in plugins.lua")
-	return
-end
+local util = require("user.util")
+local lsp_installer = util.safe_require("nvim-lsp-installer")
 
 -- Register a handler that will be called for all installed servers.
 -- Alternatively, you may also register handlers on specific server instances instead (see example below).
