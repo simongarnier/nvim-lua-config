@@ -1,4 +1,6 @@
-local configs = require("nvim-treesitter.configs")
+local util = require("user.util")
+local configs = util.safe_require("nvim-treesitter.configs")
+
 configs.setup {
     ensure_installed = "all", 
     sync_install = false, 
@@ -10,4 +12,8 @@ configs.setup {
 
     },
     indent = { enable = true, disable = { "yaml" } },
+    context_commentstring = {
+        enable = true,
+        enable_autocmd = false,
+    },
 }
