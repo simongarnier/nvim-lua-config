@@ -67,9 +67,10 @@ return packer.startup(function(use)
     use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
     -- Closing brace and quotes automatically
-    use "rstacruz/vim-closer"
-    use "jiangmiao/auto-pairs"
-    
+    -- use "rstacruz/vim-closer"
+    -- use "jiangmiao/auto-pairs"
+    use "windwp/nvim-autopairs"
+
     -- LSP
     use "neovim/nvim-lspconfig"
     use "williamboman/nvim-lsp-installer"
@@ -83,6 +84,9 @@ return packer.startup(function(use)
         run = ":TSUpdate",
     }
     use "p00f/nvim-ts-rainbow"
+
+    -- Access register to grab previous yank
+    use "tversteeg/registers.nvim"
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
