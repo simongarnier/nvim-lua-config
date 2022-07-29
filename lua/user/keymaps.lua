@@ -25,7 +25,7 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Open explorer
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
@@ -45,8 +45,8 @@ keymap("n", "<CR>", ":noh<CR><CR>", opts)
 
 
 -- Insert --
--- Press jk fast to enter
--- keymap("i", "jk", "<ESC>", opts)
+-- Press jk fast to send escape (useful for mbp touchbar)
+keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode

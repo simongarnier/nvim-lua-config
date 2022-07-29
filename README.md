@@ -9,12 +9,13 @@ Based on https://github.com/LunarVim/Neovim-from-scratch
 - [x] toggling spell check
 - [ ] create a snippet for pcall with error message
 - [ ] setup auto pairs correctly
-- [x] extractin protected requires to some utils file
+- [x] extracting protected requires to some utils file
 
 ## Plugin
 - [x] Markdown preview
 - [x] Theming
 - [ ] surround (if needed)
+- [ ] setup org mode
 
 ## Things to fix
 - [x] termguicolor breaking all the colors when turned on
