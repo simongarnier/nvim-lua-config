@@ -41,3 +41,6 @@ luac.out
 
 # Plugin compiled file
 plugin/packer_compiled.lua
+
+# Spelling
+spell/
