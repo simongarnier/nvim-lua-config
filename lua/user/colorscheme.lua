@@ -1,6 +1,6 @@
-local colorscheme = "darkplus"
+local colorscheme = "nord"
 
--- vim.g.tokyonight_style = "storm"
+-- vim.g.tokyonight_style = "storm" -- can also be { "night", "day" }
 -- vim.g.tokyonight_italic_functions = true
 -- vim.g.tokyonight_sidebars = { "qf", "vista_kind", "terminal", "packer" }
 -- vim.g.tokyonight_colors = { hint = "orange", error = "#ff0000" }

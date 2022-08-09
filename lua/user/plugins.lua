@@ -44,7 +44,6 @@ return packer.startup(function(use)
     use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
     use "numToStr/Comment.nvim" -- Easily comment stuff
 
-    -- My plugins --
     -- Markdown Preview
     use { "iamcco/markdown-preview.nvim", run = 'cd app && yarn install' }
 
@@ -96,6 +95,10 @@ return packer.startup(function(use)
     -- Better fs navigator
     use 'kyazdani42/nvim-web-devicons'
     use 'kyazdani42/nvim-tree.lua'
+
+    -- bufferline
+    use "akinsho/bufferline.nvim"
+    use "moll/vim-bbye"
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
