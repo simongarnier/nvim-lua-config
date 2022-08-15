@@ -43,7 +43,6 @@ keymap("n", "<F11>", ":set spell!<cr>", opts)
 -- Cancelling search highlight
 keymap("n", "<CR>", ":noh<CR><CR>", opts)
 
-
 -- Insert --
 -- Press jk fast to send escape (useful for mbp touchbar)
 keymap("i", "jk", "<ESC>", opts)
@@ -68,3 +67,5 @@ keymap("n", "<F7>", "gg=G''", opts)
 keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes'))<cr>", opts)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
+-- formatting
+keymap("n", "<leader>p", "<cmd>lua vim.lsp.buf.format()<cr>", opts)

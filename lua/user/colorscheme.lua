@@ -1,4 +1,4 @@
-local colorscheme = "nord"
+local colorscheme = "tokyonight"
 
 -- vim.g.tokyonight_style = "storm" -- can also be { "night", "day" }
 -- vim.g.tokyonight_italic_functions = true

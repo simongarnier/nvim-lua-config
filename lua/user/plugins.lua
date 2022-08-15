@@ -26,6 +26,7 @@ augroup end
 
 -- Use a protected call so we don't error out on first use
 local packer = util.safe_require("packer")
+if not packer then return end
 
 -- Have packer use a popup window
 packer.init {
@@ -74,10 +75,13 @@ return packer.startup(function(use)
     -- LSP
     use "neovim/nvim-lspconfig"
     use "williamboman/nvim-lsp-installer"
+    use "jose-elias-alvarez/null-ls.nvim" -- formatters/linters integration 
+    use "RishabhRD/popfix"
+    use "RishabhRD/nvim-lsputils"
 
     -- Telescope
     use "nvim-telescope/telescope.nvim"
-    
+
     -- Treesitter
     use {
         "nvim-treesitter/nvim-treesitter",
@@ -99,6 +103,12 @@ return packer.startup(function(use)
     -- bufferline
     use "akinsho/bufferline.nvim"
     use "moll/vim-bbye"
+
+    -- status line
+    use {
+        "nvim-lualine/lualine.nvim",
+        requires = { "kyazdani42/nvim-web-devicons", opt = true }
+    }
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
