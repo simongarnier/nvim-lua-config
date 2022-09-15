@@ -35,6 +35,8 @@ o.sidescrolloff = 8
 o.guifont = "monospace:h17"
 o.shortmess:append "c"
 o.guicursor = ""
+o.relativenumber = true
+o.number = true
 
 -- Spellcheck option
 o.spelllang= { "en", "cjk" }
