@@ -93,7 +93,6 @@ nvim_tree.setup {
                 return 50
             end
         end,
-        height = 30,
         hide_root_folder = false,
         side = "left",
         mappings = {
